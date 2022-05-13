@@ -13,6 +13,7 @@ from .serializers import PostSerializer, UserSerializer, PostQuantitySerializer
 
 
 class PostViewSet(viewsets.ModelViewSet):
+    """COMMENT 13052022"""
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     filter_backends = (DjangoFilterBackend,)
